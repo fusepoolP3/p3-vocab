@@ -1,4 +1,1 @@
-ns
-==
-
-Fusepool P3 Namespaces
+[Fusepool P3](http://www.fusepool.eu/p3) Namespaces
