@@ -7,4 +7,7 @@ RewriteBase /
 
 RewriteRule ^ldp$ ldp.ttl [R=303]
 
+AddType 'text/turtle; charset=UTF-8' ttl
+AddType 'application/rdf+xml; charset=UTF-8' rdf
+
 ...
