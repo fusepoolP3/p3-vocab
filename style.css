@@ -1,10 +1,40 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
 div#header {
     background-color: #0293b3;
     background-image: url(http://www.fusepool.eu/_/rsrc/1347186514959/config/customLogo.gif?revision=13);
+    margin: 0;
+    border-radius: 0 !important;
+}
+
+div#header h2 {
+    display: inline-block;
 }
 
 h1, h2, h3 {
-    background-color: #dddddd;
+    background-color: inherit !important;
+    color: #0293b3;
+}
+
+.ontologies {
+    background-color: #0293b3;
+}
+
+.ontologies h3 {
+   color: #dddddd;
+}
+
+.ontologies div.term h3 span.menu span {
+   color: #dddddd;
+   border: 2px solid #dddddd;
+}
+
+.ontologies div.term h3 span.menu span.active {
+   color: #0293b3;  
+   border: 2px solid #ffffff;
 }
 
 div.toc, div#prologue, div#appendix {
