@@ -10,7 +10,7 @@
 
 : a owl:Ontology ;
   rdfs:label "FP3 vocabulary"@en ;
-  rdfs:comment "Terms for describing the LDP Interaction Model for transform data with Fusepool P3"@en ;
+  rdfs:comment "Terms for describing the extended LDP Interaction Model to transform data with Fusepool P3"@en ;
   dct:creator "Sergio Fernández" ;
   dct:creator "Reto Gmür" ;
   dct:created "2014-06-16" ;

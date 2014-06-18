@@ -8,19 +8,22 @@ RewriteRule ^$ http://www.fusepool.eu/p3 [R=301,L]
 AddDefaultCharset utf-8
 AddType text/turtle .ttl
 
-# Generic rules based on http://www.wikier.org/blog/easily-document-your-vocabularies-ontologies-with-parrot
+# Rules based on http://www.wikier.org/blog/easily-document-your-vocabularies-ontologies-with-parrot
 
 # Rewrite rule to serve HTML content from the vocabulary URI if requested 
 RewriteCond %{HTTP_ACCEPT} !text/turtle.*(text/html|application/xhtml\+xml) 
 RewriteCond %{HTTP_ACCEPT} text/html [OR] 
 RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR] 
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.* 
-RewriteRule ^([a-z]+)$ http://ontorule-project.eu/parrot/parrot?documentUri=http://vocab.fusepool.info/$1.ttl [R=303,L]
+RewriteCond %{REQUEST_FILENAME}.ttl -f
+RewriteRule ^([a-z0-9]+)$ http://ontorule-project.eu/parrot/parrot?documentUri=http://vocab.fusepool.info/$1.ttl [R=303,L]
 
 # Rewrite rule to serve RDF content from the vocabulary URI if requested 
 RewriteCond %{HTTP_ACCEPT} text/turtle
-RewriteRule ^([a-z]+)$ $1.ttl [R=303,L] 
+RewriteCond %{REQUEST_FILENAME}.ttl -f
+RewriteRule ^([a-z0-9]+)$ $1.ttl [R=303,L] 
 	
 # Rewrite rule to serve the RDF content from the vocabulary URI by default 
-RewriteRule ^([a-z]+)$ $1.ttl [R=303]
+RewriteCond %{REQUEST_FILENAME}.ttl -f
+RewriteRule ^([a-z0-9]+)$ $1.ttl [R=303]
 
