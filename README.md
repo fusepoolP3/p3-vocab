@@ -1,1 +1,3 @@
-[Fusepool P3](http://www.fusepool.eu/p3) Namespaces
+[Fusepool P3](http://www.fusepool.eu/p3) [vocabularies](http://vocab.fusepool.info):
+
+* `fp3`: [http://vocab.fusepool.info/fp3#](http://vocab.fusepool.info/fp3#)
