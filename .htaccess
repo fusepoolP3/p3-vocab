@@ -4,9 +4,7 @@ RewriteEngine On
 RewriteBase /
 
 AddDefaultCharset utf-8
-AddType text/turtle .ttl 
-
-RewriteRule ^[a-z]+$ $1.ttl [R=303]
+AddType text/turtle .ttl
 
 # Generic rules based on http://www.wikier.org/blog/easily-document-your-vocabularies-ontologies-with-parrot
 
@@ -15,12 +13,12 @@ RewriteCond %{HTTP_ACCEPT} !text/turtle.*(text/html|application/xhtml\+xml)
 RewriteCond %{HTTP_ACCEPT} text/html [OR] 
 RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR] 
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.* 
-RewriteRule ^[a-z]+$ http://ontorule-project.eu/parrot/parrot?documentUri=http://vocab.fusepool.info/$1.ttl [R=303,L]
+RewriteRule ^([a-z]+)$ http://ontorule-project.eu/parrot/parrot?documentUri=http://vocab.fusepool.info/$1.ttl [R=303,L]
 
 # Rewrite rule to serve RDF content from the vocabulary URI if requested 
 RewriteCond %{HTTP_ACCEPT} text/turtle
-RewriteRule ^[a-z]+$ $1.ttl [R=303] 
+RewriteRule ^([a-z]+)$ $1.ttl [R=303,L] 
 	
 # Rewrite rule to serve the RDF content from the vocabulary URI by default 
-RewriteRule ^[a-z]+$ $1.ttl [R=303]
+RewriteRule ^([a-z]+)$ $1.ttl [R=303]
 
