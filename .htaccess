@@ -3,8 +3,24 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 
-RewriteRule ^ldp$ ldp.ttl [R=303]
+AddDefaultCharset utf-8
+AddType text/turtle .ttl 
 
-AddType 'text/turtle; charset=UTF-8' ttl
-AddType 'application/rdf+xml; charset=UTF-8' rdf
+RewriteRule ^[a-z]+$ $1.ttl [R=303]
+
+# Generic rules based on http://www.wikier.org/blog/easily-document-your-vocabularies-ontologies-with-parrot
+
+# Rewrite rule to serve HTML content from the vocabulary URI if requested 
+RewriteCond %{HTTP_ACCEPT} !text/turtle.*(text/html|application/xhtml\+xml) 
+RewriteCond %{HTTP_ACCEPT} text/html [OR] 
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.* 
+RewriteRule ^[a-z]+$ http://ontorule-project.eu/parrot/parrot?documentUri=http://vocab.fusepool.info/$1.ttl [R=303,L]
+
+# Rewrite rule to serve RDF content from the vocabulary URI if requested 
+RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteRule ^[a-z]+$ $1.ttl [R=303] 
+	
+# Rewrite rule to serve the RDF content from the vocabulary URI by default 
+RewriteRule ^[a-z]+$ $1.ttl [R=303]
 
