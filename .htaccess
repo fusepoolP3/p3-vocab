@@ -14,7 +14,7 @@ RewriteCond %{HTTP_ACCEPT} text/html [OR]
 RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR] 
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.* 
 RewriteCond %{REQUEST_FILENAME}.ttl -f
-RewriteRule ^([a-z0-9]+)$ http://ontorule-project.eu/parrot/parrot?documentUri=http://vocab.fusepool.info/$1.ttl&&customizeCssUrl=http://vocab.fusepool.info/style.css [R=303,L]
+RewriteRule ^([a-z0-9]+)$ http://idi.fundacionctic.org/parrot/parrot?documentUri=http://vocab.fusepool.info/$1.ttl&&customizeCssUrl=http://vocab.fusepool.info/style.css [R=303,L]
 
 # Rewrite rule to serve RDF content from the vocabulary URI if requested 
 RewriteCond %{HTTP_ACCEPT} text/turtle
