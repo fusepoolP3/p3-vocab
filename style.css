@@ -1,0 +1,35 @@
+div#header {
+    background-color: #0293b3;
+    background-image: url(http://www.fusepool.eu/_/rsrc/1347186514959/config/customLogo.gif?revision=13);
+}
+
+h1, h2, h3 {
+    background-color: #dddddd;
+}
+
+div.toc, div#prologue, div#appendix {
+    border: solid #0293b3;
+    background-color: #dddddd;
+}
+
+.jx-bar {
+    background-color: #dddddd;
+    border: 1px solid #0293b3;
+}
+
+.jx-bar span {
+    background-color: #dddddd;
+}
+
+.jx-bar-button li {
+    border: 1px solid #0293b3;
+}
+
+.jx-bar-button li a:link, .jx-bar-button li a:visited {
+    color: white;
+}
+
+.jx-show {
+    background-color: #dddddd;
+    border: 1px solid #0293b3;
+}
