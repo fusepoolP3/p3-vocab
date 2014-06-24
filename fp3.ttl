@@ -19,5 +19,5 @@
   dct:publisher <http://www.fusepool.eu/p3> ;
   rdfs:isDefinedBy <http://vocab.fusepool.info/fp3.ttl> ;
   rdfs:seeAlso <http://vocab.fusepool.info/fp3.ttl> ;
-  dct:hasPart <http://vocab.fusepool.info/ldp#>
+  dct:hasPart <http://vocab.fusepool.info/ldp#> .
 
