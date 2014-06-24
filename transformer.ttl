@@ -26,7 +26,7 @@
   
 :supportedInputFormat  a rdf:Property;
   rdfs:label "supported input format"@en ;
-  rdfs:commet "Points to the media type of a format supported as input type for the transformer identified by the subject"@en ;
+  rdfs:commet "Points to the media type or media type pattern of formats supported as input type for the transformer identified by the subject"@en ;
   rdfs:domain :Transformer ;
   rdfs:range xsd:String ;
   vs:term_status "unstable" .
