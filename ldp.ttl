@@ -1,0 +1,28 @@
+@prefix ldp:  <http://www.w3.org/ns/ldp#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix : <http://vocab.fusepool.info/ldp#>.
+
+@base <http://vocab.fusepool.info/ldp> .
+
+: a owl:Ontology ;
+  rdfs:label "Extended LDP Interaction Model"@en ;
+  rdfs:comment "Extended LDP Interaction Model to transform data with Fusepool P3"@en ;
+  dct:creator "Sergio Fernández" ;
+  dct:created "2014-06-16" ;
+  dct:modified "2014-06-24" ;
+  dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+  dct:publisher <http://www.fusepool.eu/p3> ;
+  rdfs:isDefinedBy <http://vocab.fusepool.info/ldp.ttl> ;
+  rdfs:seeAlso <http://vocab.fusepool.info/ldp.ttl> ;
+  dct:isPartOf <http://vocab.fusepool.info/fp3#> .
+
+:TransformationContainer a rdfs:Class ;
+  rdfs:subClassOf ldp:Container ;
+  rdfs:label "Transformation Container"@en ;
+  rdfs:comment "A Fusepool P3 Transformation Container, which extends the regular LDPC Interaction Model to perform data transformations."@en ;
+  vs:term_status "unstable" .
+

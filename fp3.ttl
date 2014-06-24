@@ -9,20 +9,15 @@
 @base <http://vocab.fusepool.info/fp3> .
 
 : a owl:Ontology ;
-  rdfs:label "FP3 vocabulary"@en ;
-  rdfs:comment "Terms for describing the extended LDP Interaction Model to transform data with Fusepool P3"@en ;
+  rdfs:label "FP3 vocabularies"@en ;
+  rdfs:comment "Fusepool P3 RDF vocabularies"@en ;
   dct:creator "Sergio Fernández" ;
   dct:creator "Reto Gmür" ;
   dct:created "2014-06-16" ;
-  dct:modified "2014-06-18" ;
+  dct:modified "2014-06-24" ;
   dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dct:publisher <http://www.fusepool.eu/p3> ;
   rdfs:isDefinedBy <http://vocab.fusepool.info/fp3.ttl> ;
-  rdfs:seeAlso <http://vocab.fusepool.info/fp3.ttl> .
-
-:TransformationContainer a rdfs:Class ;
-  rdfs:subClassOf ldp:Container ;
-  rdfs:label "Transformation Container"@en ;
-  rdfs:comment "A Fusepool P3 Transformation Container, which extends the regular LDPC Interaction Model to perform data transformations."@en ;
-  vs:term_status "unstable" .
+  rdfs:seeAlso <http://vocab.fusepool.info/fp3.ttl> ;
+  dct:hasPart <http://vocab.fusepool.info/ldp#>
 
