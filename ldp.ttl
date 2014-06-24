@@ -15,7 +15,7 @@
   dct:created "2014-06-16" ;
   dct:modified "2014-06-24" ;
   dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
-  dct:publisher <http://www.fusepool.eu/p3> ;
+  dct:publisher <http://p3.fusepool.eu> ;
   rdfs:isDefinedBy <http://vocab.fusepool.info/ldp.ttl> ;
   rdfs:seeAlso <http://vocab.fusepool.info/ldp.ttl> ;
   dct:isPartOf <http://vocab.fusepool.info/fp3#> .

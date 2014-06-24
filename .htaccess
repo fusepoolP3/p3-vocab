@@ -1,7 +1,7 @@
 RewriteEngine On
 RewriteBase /
 
-RewriteRule ^$ http://www.fusepool.eu/p3 [R=301,L]
+RewriteRule ^$ http://p3.fusepool.eu [R=301,L]
 
 AddDefaultCharset utf-8
 AddType text/turtle .ttl

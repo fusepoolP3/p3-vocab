@@ -1,4 +1,4 @@
-# [Fusepool P3](http://www.fusepool.eu/p3) [vocabularies](http://vocab.fusepool.info)
+# [Fusepool P3](http://p3.fusepool.eu) [vocabularies](http://vocab.fusepool.info)
 
 * `fp3` <[http://vocab.fusepool.info/fp3#](http://vocab.fusepool.info/fp3#)> is the meta-vocabulary grouping all other small vocabularies
 
