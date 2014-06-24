@@ -6,8 +6,8 @@
 ## Management
 
 To upload new vocabularies, just upload a `.ttl` file to `vocab.fusepool.info`
-and the server will manage the content negotiation according the 
-[best practices](http://www.w3.org/TR/swbp-vocab-pub/).
+and the server will automatically manage the content negotiation rules according 
+the [best practices](http://www.w3.org/TR/swbp-vocab-pub/).
 
 HTML reporting kindly provided by [Parrot](https://bitbucket.org/fundacionctic/parrot).
 
