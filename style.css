@@ -5,7 +5,7 @@ html, body {
 
 div#header {
     background-color: #0293b3;
-    background-image: url(http://www.fusepool.eu/_/rsrc/1347186514959/config/customLogo.gif?revision=13);
+    background-image: url(https://raw.githubusercontent.com/fusepoolP3/platform/master/backends/marmotta/dashboard/src/main/resources/web/public/images/fusepool.png);
     margin: 0;
     border-radius: 0 !important;
 }
