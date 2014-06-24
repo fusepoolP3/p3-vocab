@@ -1,0 +1,39 @@
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix : <http://vocab.fusepool.info/transformer#>.
+
+
+: a owl:Ontology ;
+  rdfs:label "Tranformer Ontology"@en ;
+  rdfs:comment "An ontology that describe transformers, see https://github.com/fusepoolP3/overall-architecture/blob/master/data-transformer-api.md"@en ;
+  dct:creator "Reto Gmür" ;
+  dct:created "2014-06-24" ;
+  dct:modified "2014-06-24" ;
+  dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+  dct:publisher <http://p3.fusepool.eu> ;
+  rdfs:isDefinedBy <http://vocab.fusepool.info/transformer.ttl> ;
+  rdfs:seeAlso <http://vocab.fusepool.info/transformer.ttl> ;
+  dct:isPartOf <http://vocab.fusepool.info/fp3#> .
+
+:Transformer a rdfs:Class ;
+  rdfs:label "Transformer"@en ;
+  rdfs:comment "A service transforming (or extracting, or lifting) content."@en ;
+  vs:term_status "unstable" .
+  
+:supportedInputFormat  a rdf:Property;
+  rdfs:label "supported input format"@en ;
+  rdfs:commet "Points to the media type of a format supported as input type for the transformer identified by the subject"@en ;
+  rdfs:domain :Transformer ;
+  rdfs:range xsd:String ;
+  vs:term_status "unstable" .
+  
+:supportedOutputFormat  a rdf:Property;
+  rdfs:label "supported output format"@en ;
+  rdfs:commet "Points to the media type of a format supported as output type for the transformer identified by the subject"@en ;
+  rdfs:domain :Transformer ;
+  rdfs:range xsd:String ;
+  vs:term_status "unstable" .
