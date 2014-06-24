@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dct:  <http://purl.org/dc/terms/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix trans: <http://vocab.fusepool.info/transformer#>.
 @prefix : <http://vocab.fusepool.info/ldp#>.
 
 @base <http://vocab.fusepool.info/ldp> .
@@ -20,9 +21,16 @@
   rdfs:seeAlso <http://vocab.fusepool.info/ldp.ttl> ;
   dct:isPartOf <http://vocab.fusepool.info/fp3#> .
 
-:TransformationContainer a rdfs:Class ;
+:TransformingContainer a rdfs:Class ;
   rdfs:subClassOf ldp:Container ;
-  rdfs:label "Transformation Container"@en ;
-  rdfs:comment "A Fusepool P3 Transformation Container, which extends the regular LDPC Interaction Model to perform data transformations."@en ;
+  rdfs:label "Transforming Container"@en ;
+  rdfs:comment "An LDPC which sends added content to a transformer and adds the results of the transformation to the LDPC as well. See https://github.com/fusepoolP3/overall-architecture/blob/master/transforming-container-api.md."@en ;
+  vs:term_status "unstable" .
+  
+:transformer a rdf:Property; 
+  rdfs:label "transformer"@en ;
+  rdfs:commet "Points to the Transformer that is invoked when contents are added to the subject (using POST requests as described by the LDP Specification"@en ;
+  rdfs:domain :TransformationContainer ;
+  rdfs:range trans:Transformer ;
   vs:term_status "unstable" .
 
