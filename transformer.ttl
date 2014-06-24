@@ -37,3 +37,13 @@
   rdfs:domain :Transformer ;
   rdfs:range xsd:String ;
   vs:term_status "unstable" .
+  
+:status  a rdf:Property;
+  rdfs:label "status"@en ;
+  rdfs:commet "Points to the status of the processing of the subject"@en ;
+  rdfs:domain :TransformerJob ;
+  rdfs:range :Status ;
+  vs:term_status "unstable" .
+  
+:Processing a :Status ;
+  rdfs:label "Processing"@en .
