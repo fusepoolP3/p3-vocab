@@ -14,11 +14,11 @@
   rdfs:comment "Extended LDP Interaction Model to transform data with Fusepool P3"@en ;
   dct:creator "Sergio Fernández" ;
   dct:created "2014-06-16" ;
-  dct:modified "2014-06-24" ;
+  dct:modified "2014-06-25" ;
   dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dct:publisher <http://p3.fusepool.eu> ;
-  rdfs:isDefinedBy <http://vocab.fusepool.info/ldp.ttl> ;
-  rdfs:seeAlso <http://vocab.fusepool.info/ldp.ttl> ;
+  rdfs:isDefinedBy <http://vocab.fusepool.info/eldp.ttl> ;
+  rdfs:seeAlso <http://vocab.fusepool.info/eldp.ttl> ;
   dct:isPartOf <http://vocab.fusepool.info/fp3#> .
 
 :TransformingContainer a rdfs:Class ;

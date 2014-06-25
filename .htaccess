@@ -1,6 +1,7 @@
 RewriteEngine On
 RewriteBase /
 
+# Requests to the root
 RewriteRule ^$ http://p3.fusepool.eu [R=301,L]
 
 AddDefaultCharset utf-8
@@ -24,3 +25,8 @@ RewriteRule ^([a-z0-9]+)$ $1.ttl [R=303,L]
 # Rewrite rule to serve the RDF content from the vocabulary URI by default 
 RewriteCond %{REQUEST_FILENAME}.ttl -f
 RewriteRule ^([a-z0-9]+)$ $1.ttl [R=303]
+
+# Deprecated namespaces
+RewriteRule ^ldp$ elpd [R=301,L]
+
+

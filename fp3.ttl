@@ -14,10 +14,11 @@
   dct:creator "Sergio Fernández" ;
   dct:creator "Reto Gmür" ;
   dct:created "2014-06-16" ;
-  dct:modified "2014-06-24" ;
+  dct:modified "2014-06-25" ;
   dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dct:publisher <http://p3.fusepool.eu> ;
   rdfs:isDefinedBy <http://vocab.fusepool.info/fp3.ttl> ;
   rdfs:seeAlso <http://vocab.fusepool.info/fp3.ttl> ;
-  dct:hasPart <http://vocab.fusepool.info/ldp#> .
+  dct:hasPart <http://vocab.fusepool.info/transformer#> ;
+  dct:hasPart <http://vocab.fusepool.info/eldp#> .
 
