@@ -5,9 +5,9 @@
 @prefix dct:  <http://purl.org/dc/terms/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix trans: <http://vocab.fusepool.info/transformer#>.
-@prefix : <http://vocab.fusepool.info/ldp#>.
+@prefix : <http://vocab.fusepool.info/eldp#>.
 
-@base <http://vocab.fusepool.info/ldp> .
+@base <http://vocab.fusepool.info/eldp> .
 
 : a owl:Ontology ;
   rdfs:label "Extended LDP Interaction Model"@en ;
