@@ -1,0 +1,11 @@
+language: java
+deploy:
+  edge: true
+  provider: releases
+  api-key:
+    - secure: VWL+B2S6Xixj+actXHzxMJCKeaLVKejyiK88FJEM1+deYJ8rcUGz1PUYMFN2yf5qQShIEuWr3qQrtLq6gxocvGh4peWdPqGMIkjIr+tXTozaGJ+2ogknXyOm0PoxSmHgwXL48H/bEuEjgzqYroBhc0EMjiskI47lJNrmeDq7mtM=
+  file: "target/vocab*.jar"
+  on:
+    tags: true
+    all_branches: true
+    
