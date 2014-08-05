@@ -31,6 +31,11 @@
     <description>
         Fusepool P3 Ontologies
     </description>
+    <scm>
+        <url>https://github.com/fusepoolp3/p3-vocab</url>
+        <connection>scm:git:https://github.com/fusepoolp3/p3-vocab</connection>
+        <developerConnection>scm:git:git@github.com:fusepoolp3/p3-vocab.git</developerConnection>
+    </scm>
     <dependencies>
         <dependency>
             <groupId>org.apache.clerezza</groupId>
