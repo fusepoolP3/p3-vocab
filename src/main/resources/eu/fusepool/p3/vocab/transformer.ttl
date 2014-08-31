@@ -26,21 +26,21 @@
   
 :supportedInputFormat  a rdf:Property;
   rdfs:label "supported input format"@en ;
-  rdfs:commet "Points to the media type or media type pattern of formats supported as input type for the transformer identified by the subject"@en ;
+  rdfs:comment "Points to the media type or media type pattern of formats supported as input type for the transformer identified by the subject"@en ;
   rdfs:domain :Transformer ;
   rdfs:range xsd:String ;
   vs:term_status "unstable" .
   
 :supportedOutputFormat  a rdf:Property;
   rdfs:label "supported output format"@en ;
-  rdfs:commet "Points to the media type of a format supported as output type for the transformer identified by the subject"@en ;
+  rdfs:comment "Points to the media type of a format supported as output type for the transformer identified by the subject"@en ;
   rdfs:domain :Transformer ;
   rdfs:range xsd:String ;
   vs:term_status "unstable" .
   
 :status  a rdf:Property;
   rdfs:label "status"@en ;
-  rdfs:commet "Points to the status of the processing of the subject"@en ;
+  rdfs:comment "Points to the status of the processing of the subject"@en ;
   rdfs:domain :TransformerJob ;
   rdfs:range :Status ;
   vs:term_status "unstable" .
