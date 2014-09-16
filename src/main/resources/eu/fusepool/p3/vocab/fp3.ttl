@@ -14,7 +14,7 @@
   dct:creator "Sergio Fernández" ;
   dct:creator "Reto Gmür" ;
   dct:created "2014-06-16" ;
-  dct:modified "2014-06-25" ;
+  dct:modified "2014-09-15" ;
   dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dct:publisher <http://p3.fusepool.eu> ;
   rdfs:isDefinedBy <http://vocab.fusepool.info/fp3.ttl> ;
@@ -22,3 +22,14 @@
   dct:hasPart <http://vocab.fusepool.info/transformer#> ;
   dct:hasPart <http://vocab.fusepool.info/eldp#> .
 
+
+:InteractionRequest a rdfs:Class ;
+  rdfs:label "Interaction Request"@en ;
+  rdfs:comment "A request for user interaction"@en ;
+  vs:term_status "unstable" .
+  
+:interactionResource a rdf:Property; 
+  rdfs:label "interaction resource"@en ;
+  rdfs:comment "Points to a resource that can be dereferenced and allows a user to perform the requested interaction, e.g. by dereferencing to an HTML form."@en ;
+  rdfs:domain :InteractionRequest ;
+  vs:term_status "unstable" .
