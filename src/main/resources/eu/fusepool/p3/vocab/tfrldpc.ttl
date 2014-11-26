@@ -5,13 +5,13 @@
 @prefix dct:  <http://purl.org/dc/terms/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix trans: <http://vocab.fusepool.info/transformer#>.
-@prefix : <http://vocab.fusepool.info/trldpc#>.
+@prefix : <http://vocab.fusepool.info/tfrldpc#>.
 
-@base <http://vocab.fusepool.info/trldpc> .
+@base <http://vocab.fusepool.info/tfrldpc> .
 
 : a owl:Ontology ;
-  rdfs:label "A vocabulary for using LDPCs a transformer registry"@en ;
-  rdfs:comment "Fusepool P3 vocabulary for using LDPCs a transformer registry"@en ;
+  rdfs:label "Vocabulary for using LDPCs as registry for transformer factory UI"@en ;
+  rdfs:comment "Fusepool P3 Vocabulary for using LDPCs as registry for transformer factory UI"@en ;
   dct:creator "Reto Gmür" ;
   dct:created "2014-11-26" ;
   dct:modified "2014-11-26" ;
@@ -21,14 +21,14 @@
   rdfs:seeAlso <http://vocab.fusepool.info/trldpc.ttl> .
 
 
-:TransformerRegistration a rdfs:Class ;
-  rdfs:label "A transformer registration"@en ;
-  rdfs:comment "A registration of a transformer in a transformerregistry"@en ;
+:TransformerFactoryRegistration a rdfs:Class ;
+  rdfs:label "A transformer factory UI registration"@en ;
+  rdfs:comment "A registration of a transformer factory UI"@en ;
   vs:term_status "unstable" .
   
-:transformer a rdf:Property; 
-  rdfs:label "transformer"@en ;
-  rdfs:comment "Points to the transformer registered by the subject."@en ;
+:transformerFactory a rdf:Property; 
+  rdfs:label "transformerFactory"@en ;
+  rdfs:comment "Points to a dereferenceable resource that can be used to create transformers"@en ;
   rdfs:domain :TransformerRegistration ;
   rdfs:range trans:Transformer ;
   vs:term_status "unstable" .
