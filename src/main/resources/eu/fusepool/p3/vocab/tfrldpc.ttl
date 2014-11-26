@@ -29,6 +29,5 @@
 :transformerFactory a rdf:Property; 
   rdfs:label "transformerFactory"@en ;
   rdfs:comment "Points to a dereferenceable resource that can be used to create transformers"@en ;
-  rdfs:domain :TransformerRegistration ;
-  rdfs:range trans:Transformer ;
+  rdfs:domain :TransformerFactoryRegistration ;
   vs:term_status "unstable" .
