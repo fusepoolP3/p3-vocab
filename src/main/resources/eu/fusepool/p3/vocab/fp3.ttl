@@ -14,13 +14,42 @@
   dct:creator "Sergio Fernández" ;
   dct:creator "Reto Gmür" ;
   dct:created "2014-06-16" ;
-  dct:modified "2014-09-15" ;
+  dct:modified "2015-03-22" ;
   dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dct:publisher <http://p3.fusepool.eu> ;
   rdfs:isDefinedBy <http://vocab.fusepool.info/fp3.ttl> ;
   rdfs:seeAlso <http://vocab.fusepool.info/fp3.ttl> ;
   dct:hasPart <http://vocab.fusepool.info/transformer#> ;
   dct:hasPart <http://vocab.fusepool.info/eldp#> .
+
+:Platform a rdfs:Class ;
+  rdfs:label "P3 Platform"@en ;
+  rdfs:comment "An instance of the P3 platform"@en ;
+  vs:term_status "unstable" .
+
+:sparqlEndoint a rdf:Property; 
+  rdfs:label "sparql endpoint"@en ;
+  rdfs:comment "Points to the sparql endpoint against which queries for the data stored by the subject can be sent."@en ;
+  rdfs:domain :Platform ;
+  vs:term_status "unstable" .
+
+:transformerFactoryRegistry a rdf:Property; 
+  rdfs:label "transformer factory registry"@en ;
+  rdfs:comment "Points to the transformer factory registry"@en ;
+  rdfs:domain :Platform ;
+  vs:term_status "unstable" .
+
+:transformerRegistry a rdf:Property; 
+  rdfs:label "transformer registry"@en ;
+  rdfs:comment "Points to the transformer registry"@en ;
+  rdfs:domain :Platform ;
+  vs:term_status "unstable" .
+
+:irLDPC a rdf:Property; 
+  rdfs:label "Interaction Request Container"@en ;
+  rdfs:comment "Points to the Interaction Request Container"@en ;
+  rdfs:domain :Platform ;
+  vs:term_status "unstable" .
 
 
 :InteractionRequest a rdfs:Class ;
