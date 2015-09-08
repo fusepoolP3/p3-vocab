@@ -27,7 +27,7 @@
   rdfs:comment "An instance of the P3 platform"@en ;
   vs:term_status "unstable" .
 
-:sparqlEndoint a rdf:Property; 
+:sparqlEndpoint a rdf:Property; 
   rdfs:label "sparql endpoint"@en ;
   rdfs:comment "Points to the sparql endpoint against which queries for the data stored by the subject can be sent."@en ;
   rdfs:domain :Platform ;
