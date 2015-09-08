@@ -25,7 +25,7 @@
         <relativePath />
     </parent>
     <artifactId>vocab</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Fusepool P3 Ontologies</name>
     <description>
@@ -35,7 +35,7 @@
         <url>https://github.com/fusepoolp3/p3-vocab</url>
         <connection>scm:git:https://github.com/fusepoolp3/p3-vocab</connection>
         <developerConnection>scm:git:git@github.com:fusepoolp3/p3-vocab.git</developerConnection>
-      <tag>vocab-1.1.0</tag>
+      <tag>HEAD</tag>
   </scm>
     <dependencies>
         <dependency>
