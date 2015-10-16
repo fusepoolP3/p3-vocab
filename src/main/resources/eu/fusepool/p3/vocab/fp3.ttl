@@ -39,6 +39,19 @@
   rdfs:domain :Platform ;
   vs:term_status "unstable" .
 
+:app a rdf:Property; 
+  rdfs:label "App"@en ;
+  rdfs:comment "Points to an app (application with user interface) providing some functionality with the functionality of the subject."@en ;
+  rdfs:domain :Platform ;
+  vs:term_status "unstable" .
+
+:dashboard a rdf:Property; 
+  rdfs:label "Dashboard"@en ;
+  rdfs:comment "Points to a dashboard app for the subject"@en ;
+  rdfs:domain :Platform ;
+  rdfs:subPropertyOf :app ;
+  vs:term_status "unstable" .
+
 :transformerFactoryRegistry a rdf:Property; 
   rdfs:label "transformer factory registry"@en ;
   rdfs:comment "Points to the transformer factory registry"@en ;
