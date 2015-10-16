@@ -45,7 +45,7 @@
   rdfs:domain :Platform ;
   vs:term_status "unstable" .
 
-:irLDPC a rdf:Property; 
+:userInteractionRequestRegistry a rdf:Property; 
   rdfs:label "Interaction Request Container"@en ;
   rdfs:comment "Points to the Interaction Request Container"@en ;
   rdfs:domain :Platform ;
