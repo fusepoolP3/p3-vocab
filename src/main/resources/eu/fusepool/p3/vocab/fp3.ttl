@@ -33,6 +33,12 @@
   rdfs:domain :Platform ;
   vs:term_status "unstable" .
 
+:ldpRoot a rdf:Property; 
+  rdfs:label "LDP Root"@en ;
+  rdfs:comment "Points to the LDPC the platform uses as root, i.e. all LDPRs created by the subject are in or below this container."@en ;
+  rdfs:domain :Platform ;
+  vs:term_status "unstable" .
+
 :transformerFactoryRegistry a rdf:Property; 
   rdfs:label "transformer factory registry"@en ;
   rdfs:comment "Points to the transformer factory registry"@en ;
